@@ -1,18 +1,30 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="../../afb/"></script>
-		<title>Unit 4 Lab 2: Communication Protocols, Page 3</title>
+		<link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+		<script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+		<script type="text/javascript">
+				window.onload = function () {
+						Gifffer();
+				}
+		</script>
+		<link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+		<title>Hoofdstuk 4 Les 2: Communicatieprotocollen, Pagina 3</title>
 	</head>
 
 	<body>
 		<h2>A Hierarchy of Open Protocols</h2>
+		<p>
+        <a href="../../hoofdstuk4.html">Terug naar de inhoud van dit hoofdstuk.</a>
+    </p>		
         <div class="learn">
             <p><strong>On this page,</strong> you will learn about the communication standards used on the Internet and how they work together.</p>
         </div>
-        
+
         <div class="todo">
             <ul>
                 <li><strong>EK 2.2.3D</strong> In an abstraction hierarchy, higher levels of abstraction (the most general concepts) would be placed toward the top and lower level abstractions (the more specific concepts) toward the bottom.</li>
@@ -26,20 +38,20 @@
                 <li><strong>EK 6.2.2G</strong> Standards for packets and routing include transmission control protocol/Internet protocol (TCP/IP).</li>
             </ul>
         </div>
-        
+
         <img class="imageRight" src="../../bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Geen Afbeelding" >
         <p>There are billions of devices connected to the Internet, and hundreds of different <em>kinds</em> of devices: laptops, tablets, phones, refrigerators, handheld credit card readers, and so on. How do they all know how to find and talk to each other? <strong>Protocols</strong> (standards) ensure that the variety of devices interact with each other smoothly.</p>
         <p>There are a <em>lot</em> of protocols! The Internet was designed with several layers of <em>abstraction</em> that sort the protocols according to what part of the process they support. </p>
 
 
 		<h3>Internet Abstraction Hierarchy</h3>
-        <p>This <em>hierarchy of abstractions</em> manages the complexity of the Internet by hiding the details of lower levels of the system. The highest level of abstraction includes the most general features of the Internet that have to work the same across all devices. At lowers levels of abstraction, things get more device-specific. </p>	
+        <p>This <em>hierarchy of abstractions</em> manages the complexity of the Internet by hiding the details of lower levels of the system. The highest level of abstraction includes the most general features of the Internet that have to work the same across all devices. At lowers levels of abstraction, things get more device-specific. </p>
         <div>
             <ul>
                 <li><strong>Application Layer Protocols</strong> are the highest level of abstraction because they<em> manage how data is interpreted and displayed</em> to users. These protocols <em>give meaning to the bits</em> sent by lower-level protocols; user and server computers must agree on what the bits mean, and application protocols (like HTTP) offer this.</li>
                 <div class="endnote">
                     Browsers use <a href="/bjc-r/cur/programming/4-internet/1-reliable-communication/1-what-is-internet.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment" >HTTP</a> (HyperText Transfer Protocol) to interpret HTML instructions for page formatting. <a href="/bjc-r/cur/programming/4-internet/1-reliable-communication/3-address-hierarchy.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment" >DNS</a> (Domain Name System) converts user-friendly web addresses into IP addresses. Your email inbox may  use SMTP (Simple Mail Transfer Protocol) to send  and IMAP (Internet Message Access Protocol) to read  email.
-              </div>								
+              </div>
                 <li><strong>Transport Layer Protocols</strong> manage the <em>breakdown  of a message into packets</em> to be transmitted by lower level protocols and also the  <em>reconstruction of the message from the packets</em> upon arrival.</li>
 				<div class="endnote">
                     <a href="/bjc-r/cur/programming/4-internet/2-communication-protocols/2-tcp.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment" >TCP</a> (Transmission Control Protocol) <em>simulates</em> a reliable, long-term connection between two computers by only displaying data once all packets have arrived. When speed  is more important than accuracy, people use UDP (User Datagram Protocol), such as for  real-time video streaming, where one missed packet doesn't matter much.
@@ -59,7 +71,7 @@
 		</div>
 
 
-        <h3>Open Protocols</h3>	
+        <h3>Open Protocols</h3>
         <!--<div class="sidenoteBig">Before the Internet, there were several different network protocols that were secrets belonging to particular manufacturers. So if you had a particular brand of computer or router, it could talk only to other computers of the same brand.</div>-->
 		<p>These are all <strong>open standards</strong>: anyone can look up a protocol and code with it to make new hardware or software without permission. The Internet is probably the largest and most complicated artifact in human history, and it relies on <strong>cooperation</strong>. Despite some governments' attempts to censor the net, the big picture is one of strong cooperative spirit.</p>
 		<div class="endnote">
@@ -71,7 +83,7 @@
 			</ul>
             <p>Before the Internet, there were several different network protocols that were secrets belonging to particular manufacturers. So if you had a particular brand of computer or router, it could talk only to other computers of the same brand.</p>
 		</div>
-        
+
         <div class="forYouToDo" id="first">
             <ol>
                 <li><img class="imageRight" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding"  />
@@ -85,14 +97,14 @@ Explain how each of these protocols is an abstraction. What details does each on
                 </li>
             </ol>
 		</div>
-        
+
         <div class="ifTime">
             <ol start="2">
             	<li>Read <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=327" target="_blank" ><em>Blown to Bits</em> pages 309-312</a>.</li>
             </ol>
         </div>
-                                    
-		
+
+
 
 <!--
         <p>Your network interface connects you to a small <strong>local network</strong>.  If your connection is by Ethernet (physical cable), the local network is all the machines that are cabled together, typically all in one or two rooms.  If the computers in your lab are permanently installed, the odds are they're on an Ethernet.  If you're on a laptop, your local network consists of all the machines with WiFi connections to the same router, also typically very near each other.</p>
@@ -101,6 +113,6 @@ Explain how each of these protocols is an abstraction. What details does each on
 		<p>The network hardware interface attached to your computer only knows how to send messages to other computers on your local network.  When you ask for a web site on the other side of the world, as far as the hardware is concerned, you're just sending your request to your local router.  The router has to forward your message to <em>its</em> router, and so on, until you reach a router that's on <em>several</em> large networks and has to figure out which one is best for the next step in getting your request to its final destination.  The rules by which routers know how to do that are the <strong>Internet Protocol.</strong>  It's the abstraction that lets you imagine you're on a single huge network with all of the other computers in the world.</p>
 -->
 
-        
+
 	</body>
 </html>
